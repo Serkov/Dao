@@ -3,11 +3,6 @@
 %% Compiling:
 %$ context manual.tex
 
-%FIXME Не генерируется содержание
-
-
-
-
 % - дефис
 % – короткое тире Н-д
 % — длинное тире М-д
@@ -16,9 +11,6 @@
 % * Название разделов крупнее, "медь" сливается с названием подразделов
 % * Подписи картинок курсивом? или как то иначе визуально отделить от текста
 % * Пофиксить отображение двух картинок в ряд, а не друг под другом
-
-
-
 
 
 %+2 МГТФ (одножильный многопроволочный гибкий термостойкий с фторопластовой изоляцией)
@@ -1533,39 +1525,38 @@
 %FIXME Не ставит почему то ссылку на таблицу в тексте
 
 		\placetable[here][tab:electrochem]{Таблица электрохимических потенциалов распространенных металлов}
-		\starttable[|l|l|]
-
+		\starttabulate[|l|l|]
 			\HL
-			\NC Металл \NC Электрохимический потенциал, \unit{volt} \AR
+			\NC Металл \NC Электрохимический потенциал, \unit{volt} \NR
 			\HL
-			\NC Литий (Li)         \NC -3,0401  \NC\AR
-			\NC Калий (K)          \NC -2,931   \NC\AR
-			\NC Барий (Ba)         \NC -2,905   \NC\AR
-			\NC Стронций (Sr)      \NC -2,899   \NC\AR
-			\NC Кальций (Ca)       \NC -2,868   \NC\AR
-			\NC Натрий (Na)        \NC -2,71    \NC\AR
-			\NC Магний (Mg)        \NC -2,372   \NC\AR
-			\NC Алюминий (Al)      \NC -1,700   \NC\AR
-			\NC Марганец (Mn)      \NC -1,185   \NC\AR
-			\NC Хром (Cr)          \NC -0,852   \NC\AR
-			\NC Цинк (Zn)          \NC -0,763   \NC\AR
-			\NC Железо (Fe)        \NC -0,441   \NC\AR
-			\NC Кадмий (Cd)        \NC -0,404   \NC\AR
-			\NC Кобальт (Co)       \NC -0,28    \NC\AR
-			\NC Никель (Ni)        \NC -0,234   \NC\AR
-			\NC Олово (Sn)         \NC -0,141   \NC\AR
-			\NC Свинец (Pb)        \NC -0,126   \NC\AR
-			\NC Водород (H)        \NC 0        \NC\AR
-			\NC Сурьма (Sb)        \NC +0,240   \NC\AR
-			\NC Висмут (Bi)        \NC +0,317   \NC\AR
-			\NC Медь (Cu)          \NC +0,338   \NC\AR
-			\NC Ртуть (Hg)         \NC +0,7973  \NC\AR
-			\NC Серебро (Ag)       \NC +0,799   \NC\AR
-			\NC Палладий (Pd)      \NC +0,98    \NC\AR
-			\NC Платина (Pt)       \NC +0,963   \NC\AR
-			\NC Золото (Au)        \NC +1,691   \NC\AR
+			\NC Литий (Li)         \NC -3,0401  \NC\NR
+			\NC Калий (K)          \NC -2,931   \NC\NR
+			\NC Барий (Ba)         \NC -2,905   \NC\NR
+			\NC Стронций (Sr)      \NC -2,899   \NC\NR
+			\NC Кальций (Ca)       \NC -2,868   \NC\NR
+			\NC Натрий (Na)        \NC -2,71    \NC\NR
+			\NC Магний (Mg)        \NC -2,372   \NC\NR
+			\NC Алюминий (Al)      \NC -1,700   \NC\NR
+			\NC Марганец (Mn)      \NC -1,185   \NC\NR
+			\NC Хром (Cr)          \NC -0,852   \NC\NR
+			\NC Цинк (Zn)          \NC -0,763   \NC\NR
+			\NC Железо (Fe)        \NC -0,441   \NC\NR
+			\NC Кадмий (Cd)        \NC -0,404   \NC\NR
+			\NC Кобальт (Co)       \NC -0,28    \NC\NR
+			\NC Никель (Ni)        \NC -0,234   \NC\NR
+			\NC Олово (Sn)         \NC -0,141   \NC\NR
+			\NC Свинец (Pb)        \NC -0,126   \NC\NR
+			\NC Водород (H)        \NC 0        \NC\NR
+			\NC Сурьма (Sb)        \NC +0,240   \NC\NR
+			\NC Висмут (Bi)        \NC +0,317   \NC\NR
+			\NC Медь (Cu)          \NC +0,338   \NC\NR
+			\NC Ртуть (Hg)         \NC +0,7973  \NC\NR
+			\NC Серебро (Ag)       \NC +0,799   \NC\NR
+			\NC Палладий (Pd)      \NC +0,98    \NC\NR
+			\NC Платина (Pt)       \NC +0,963   \NC\NR
+			\NC Золото (Au)        \NC +1,691   \NC\NR
 			\HL
-		\stoptable
+		\stoptabulate
 
 		Для инженера этот ряд говорит следующее: В присутствии электролита (вода, влажность воздуха) 
 		в паре металлов будет разрушаться тот металл, что в ряду напряженности {\it левее}.
@@ -3553,10 +3544,13 @@
 	\startsubject[title={Сравнительная таблица материалов}]
 
 
-	\placetable[here][tab:compare]{Сравнительная таблица характеристик материалов (конструкционные свойства)}
-	\starttable[|l|l|]
+	\placetable[90][tab:compare]{Сравнительная таблица характеристик материалов (конструкционные свойства)}
+	\starttabulate[|l|cp(6em)|cp(6em)|cp(6em)|cp(6em)|cp(6em)|cp(6em)|cp(6em)|cp(6em)|]
 	\HL
-	\NC Название \NC Плотность \unit{gram per cubic cm} \NC Температура стекловывания \unit{celsius} \NC Макс. рабочая температура \unit{celsius} \NC Температура плавления \unit{celsius} \NC Склеиваемость/Окрашиваемость \NC Водопоглощение \% \NC Теплопроводность \unit{watt per (mm * K)}\NC Теплоемкость \unit{kilo joules per (kg * K)}\NC\SR
+	\NC Название \NC Плот\-ность, \unit{gram per cubic cm} \NC Тем\-пе\-ра\-ту\-ра стек\-ло\-вы\-ва\-ния, \unit{celsius}
+	\NC Макс. рабочая температура, \unit{celsius} \NC Температура плавления, \unit{celsius} \NC Склеиваемость, окрашиваемость
+	\NC Водопоглощение, \% \NC Теплопроводность, \unit{watt per (mm * K)}\NC Теплоемкость, \unit{kilo joules per (kg * K)}
+	\NC\SR
 	\HL
 	%				плотность	темпе стекло	рабочая темп. темп. плавления	склеиваемость	Водопогложение %  теплопроводность % теплоемкость
 	\NC Фарфор                    \NC 2,3–2,5    \NC           \NC  1000–1200\NC              \NC    Отлично     \NC     0,1–0,8    \NC     0,25–1,6   \NC  0,7–1,5       \NC\FR
@@ -3591,13 +3585,13 @@
 	\NC Поликарбонат              \NC 1,19	     \NC   140–150 \NC  100–140  \NC  140         \NC    Хорошо      \NC                \NC     0,19–0,22  \NC                \NC\MR
 	\NC Термоклей  (EVA)          \NC 0,92–0,94  \NC           \NC  45–70    \NC              \NC    Удовл.      \NC     0,05–0,13  \NC     0,35       \NC                \NC\MR
 	\HL
-	\stoptable
+	\stoptabulate
 	% http://www.perkinelmer.com/cmsresources/images/44-74863tch_mptgandstructureofcommonpolymers.pdf
 	%https://omnexus.specialchem.com/polymer-properties/properties/water-absorption-24-hours и другие таблицы оттуда
 	% http://cncnc.ru/documentation/sprav-constr/html/tom1/pages/chapter2/ckm264.html
 
-	\placetable[here][tab:compare_electric]{Сравнительная таблица характеристик материалов (электрические свойства)}
-	\starttable[|l|l|]
+	\placetable[90][tab:compare_electric]{Сравнительная таблица характеристик материалов (электрические свойства)}
+	\starttabulate[|l|cp(10em)|cp(10em)|cp(10em)|cp(10em)|cp(10em)|]
 	\HL
 	\NC Название \NC Удельное сопротивление \unit{ohm * mm} \NC Тангенс угла потерь \NC Электрическая абсорбция \NC Диэлектрическая проницаемость \NC Электрическая прочность \unit{kilo volt per mm} \NC\SR
 	\HL
@@ -3634,7 +3628,7 @@
 	\NC Поликарбонат              \NC 	            \NC 0,001–0,009    \NC          \NC    2,8–3,0     \NC     15–34          \NC\MR
 	\NC Термоклей   (EVA)         \NC 	            \NC                \NC          \NC    2,5–3,0     \NC     27–28          \NC\MR
 	\HL
-	\stoptable
+	\stoptabulate
 
 	%Калинин Н.Н. Электрорадиоматериалы 1981
 	%http://polymerdatabase.com/polymer%20physics/Dielectric%20Strength.html
